@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#home">
+    <img src="/images/my.png" style="max-width: 70px;" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience-education">Experience & Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-modal" data-toggle="modal" data-target="#contact-modal">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="custom-control custom-switch ml-2">
+    <input type="checkbox" class="custom-control-input" id="theme-toggle">
+    <label class="custom-control-label" for="theme-toggle"></label>
+  </div>
+</nav>
+<!-- Home Section -->
+<section id="home" class="d-flex align-items-center">
+  <div class="container text-center text-black">
+    <br>
+<br>
+    <h1 class="header-title">Welcome to My Portfolio</h1>
+    <p class="lead">Web Developer <span class="Middddle">|</span> Web Designer</p>
+  </div>
+</section>
+  <div id="spinner-container">
+    <img class="corner-icon top-left" src="/images/js.png">
+    <img class="corner-icon top-right" src="/images/atom.png">
+    <img class="corner-icon bottom-left" src="/images/html-5.png">
+    <img class="corner-icon bottom-right" src="/images/css-3.png">
+  </div>
+  <div class="hero-text-content">
+    <p id="typed"></p>
+  </div>
+  <br> 
+<div id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/images/me.jpg" class="img-fluid rounded-circle" alt="About Me" style="box-shadow: 0px 3px 23px 4px rgba(255, 102, 0, 0.6);">
+      </div>
+      <div class="col-md-8">
+        <h1 class="sub-title" style="display: inline-block; border-bottom: 2px solid gainsboro;">About Me</h1>
+        <br>
+        <br> 
+        <p>
+          <!-- About Me -->
+        "Hello! I'm Shawn, a self-taught web developer from Cornwall with a passion for creating user-friendly websites.
+              Currently, I'm expanding my skills by taking a Level 3 in web design & Development to further my knowledge. 
+              I have just under a year of experience working on various projects,
+              from personal websites to other professional projects, and i've developed a strong foundation in 
+              HTML, CSS and Javascript, through hands-on learning. 
+              I'm committed to ensuring attention to detail, problem-solving, and bringing creativity in finding solutions.
+              Although I don't hold any formal certifications at the moment, I am dedicated to continuing to learn and staying 
+              up-to-date with the latest web technologies.
+              I'm excited about the opportunity to work on new projects and collaborate with like-minded individuals and companies.
+        </p>
+        <!-- Tech Stack section -->
+        <h2 class="sub-title" style="display: inline-block; border-bottom: 2px solid gainsboro;">Tech Stack</h2>
+        <br>
+        <br> 
+      <div class="tech-stack-icons">
+        <img src="/images/html-5.png" alt="HTML5">
+        <img src="/images/css-3.png" alt="CSS3">
+        <img src="/images/bootstrap.png" alt="bootstrap">
+        <img src="/images/js.png" alt="JavaScript">
+        <img src="/images/nodejs.png" alt="NodeJS">
+        <img src="/images/icons8-express-js-50.png" alt="Expressjs">
+        <img src="/images/atom.png" alt="React">
+        <img src="/images/icons8-jquery-50.png" alt="jquery">
+        <img src="/images/icons8-mongodb-48.png" alt="MongoDB">
+        <img src="/images/sqlite.svg" alt="sqlite">
+        <img src="/images/mysql.png" alt="mysql">
+        <img src="/images/php.png" alt="php">
+        <img src="/images/python.png" alt="python">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h1 class="sub-title" style="display: inline-block; margin-bottom: 20px; border-bottom: 2px solid gainsboro;">Portfolio</h1>
+    <br>
+    <br> 
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/123cook.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">123 Go Cook </h3>
+            <p class="project-description">Fully responsive recipe website built with HTML, CSS and Javascript with a database (IndexDB) </p>
+            <a href="https://123cook.netlify.app/"  target="_blank"  class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/G&D.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">S&A Website</h3>
+            <p class="project-description">Website partnered up with a graphic designer collaborating knowledge. Website built with HTML, CSS and Javascript. (ongoing)</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/blog.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">Blog Website</h3>
+            <p class="project-description">Dynamic blog site with Node.js, MongoDB, EJS, Express, Mongoose, and CSS. User-friendly, responsive, and engaging.</p>
+            <a href="https://github.com/Shawn2208/Dev-Blog" target="_blank" class="btn btn-primary">View code</a>
+            <a href="https://youtu.be/1xbYA7K4DGc" target="_blank" class="btn btn-primary">Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/freshsuits.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">Freshsuits</h3>
+            <p class="project-description">"Fresh Suits: A stylish website crafted with HTML, CSS, JS, and Bootstrap for modern elegance."</p>
+            <a href="https://freshsuits.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/Shawn2208/FreshSuits" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/experience site.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">Experience's Website</h3>
+            <p class="project-description">Fully responsive Experience website. Website built with HTML, CSS and Javascript.
+              <br> 
+              <br> 
+            </p>
+            <a href="https://experience-site.netlify.app/" target="_blank"  class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-item">
+          <img src="/images/start page.png" class="img-fluid" alt="Project 1">
+          <div class="project-details">
+            <h3 class="project-title">Start Page</h3>
+            <p class="project-description">A personalised home page using html, css and javascript. Non-responsive for mobile
+              but ideal for desktop.
+            </p>
+            <a href="https://your-page.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experience -->
+<section id="experience-education" class="py-5">
+  <div class="container">
+    <h1 class="sub-title" style="display: inline-block; border-bottom: 2px solid gainsboro;">Experience & Education</h1>
+    <br>
+    <br> 
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="section-title" >Experience</h3>
+        <br> 
+        <ul class="list-unstyled experience-list">
+          <li>
+            <i class="fa fa-briefcase"></i>
+            <span>Freelance</span><br />
+            (2022 - Present)
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-briefcase"></i>
+            <span>Security Officer - MITIE LIMITED</span><br />
+            (07/05/2021 - 18/02/2022)
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-briefcase"></i>
+            <span>Security Officer - Lodge Security LTD</span><br />
+            (08/04/2019 – 07/09/2020)
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-briefcase"></i>
+            <span>Security Officer - Total Security Services</span><br />
+            (01/10/2014 - 10/04/2019)
+          </li>
+        </ul>
+      </div>
+      <!-- Education -->
+      <div class="col-md-6">
+        <h3 class="section-title">Education</h3>
+        <br> 
+        <ul class="list-unstyled education-list">
+          <li>
+            <i class="fa fa-graduation-cap"></i>
+            <span>GCSE’s - C's</span><br />
+            (including maths, English and science)
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-graduation-cap"></i>
+            <span>Level 3 Web Design & Development.</span><br />
+            (Currently Studying)
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-graduation-cap"></i>
+            <span>NCFE Level 2 Certificate in understanding coding</span><br />
+          </li>
+          <br> 
+          <li>
+            <i class="fa fa-graduation-cap"></i>
+            <span>Javascript master online course online Accreditation</span><br />
+          </li>
+          <br>
+          <li>
+            <i class="fa fa-graduation-cap"></i>
+            <span>Full-Stack Web Development Udemy Course</span><br />
+            (expanding my knowledge in web development by studying additional courses)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Contact Modal -->
+ <div class="modal-content theme-mode">
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contact-modal-label">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="contact-left">
+          <h1 class="sub-title-contact">Contact Me</h1>
+          <p>
+            <ion-icon class="send" name="send-outline"></ion-icon>
+            <span class="email">Shawn.101@hotmail.com</span>
+          </p>
+          <ion-icon class="call" name="call-outline"></ion-icon>
+          <span class="number">07711260765</span>
+          <a href="Shawn Cocking CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://formsubmit.co/shawn.101@hotmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Social Media Icons -->
+      <div class="col-md-6">
+        <h4 class="Middddle">Follow Me</h4>
+        <div class="socials-1">
+          <a href="https://github.com/Shawn2208" target="_blank">
+            <img src="/images/github.png" alt="GitHub" width="40" height="40">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100079705502745" target="_blank">
+            <img src="/images/facebook.png" alt="Facebook" width="40" height="40">
+          </a>
+          <a href="https://www.linkedin.com/in/shawn-cocking-9a0b8b163/" target="_blank">
+            <img src="/images/linkedin.png" alt="LinkedIn" width="40" height="40">
+          </a>
+        </div>
+      </div>
+      <!-- Web Development Communities -->
+      <div class="col-md-6">
+        <h4 class="Middddle">Web Development Communities</h4>
+        <div class="web-dev-communities">
+          <a href="https://stackexchange.com/users/27792843/shawn2208" target="_blank">
+            <img src="/images/social.png" alt="Stack Overflow" width="40" height="40">
+          </a>
+          <a href="https://dev.to/shawn2208" target="_blank">
+            <img src="/images/dev.png" alt="Dev.to" width="40" height="40">
+          </a>
+          <a href="https://www.instagram.com/shawndevs/" target="_blank">
+            <img src="/images/instagram.png" width="40" height="40">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<br> 
+<br> 
+<div class="copyright">
+  <p>Copyright shawn.c dev's 2023</p>
+</div>
+
+<script src="app.js"></script>
+<script src="app1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+/* Modal styles */
+.modal-content {
+    background-color: #fefefe;
+    border: none; /* Remove the border */
+    border-radius: 15px;
+  }
+  
+  .close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .row {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .contact-left {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-right {
+    flex-basis: 60%;
+    padding-left: 20px; /* Add some padding to the right section */
+  }
+  
+
+  .btn2 {
+    display: inline-block;
+    background: #dc830d;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 10px;
+    color: #fff;
+    width: 174px;
+    text-align: center; /* Center the button text */
+  }
+  
+  .contact-right form {
+    width: 100%;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    background: #f8f8f8; /* Change the input background */
+    padding: 15px;
+    margin: 15px 0px;
+    color: #000; /* Change the input text color */
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  
+  form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+/* style.css */
+.tech-stack-icons {
+    display: inline-block;
+    line-height: 1;
+  }
+  
+.tech-stack-icons img {
+      height: 40px;
+      margin: 10px;
+}
+  
+
+#home {
+  padding-top: 80px; /* Adjust the value as needed */
+}
+  
+
+/* Light Mode Styles (Default) */
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+/* Add styles for dark mode inside the theme-mode.dark-mode class */
+.theme-mode.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+/* Add styles for light mode inside the theme-mode class (this will be applied when dark mode is not active) */
+.theme-mode {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.web-dev-communities a:hover {
+  text-decoration: none;
+  color:rgb(255, 102, 0);
+}
+
+.socials-1 a:hover {
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  background-color:  #343a40; /* Set the background color for the copyright section */
+  color:rgb(255, 102, 0); /* Set the text color for the copyright text */
+  padding: 10px 0; /* Add padding to the top and bottom of the section for spacing */
+}
+.col-md-8 {
+padding-top: 29px;
+}
+
+/* CSS for the project descriptions */
+.project-details {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 19px;
+  color: #fff;
+}
+
+/* CSS for the fade-in effect on hover */
+.project-item {
+  position: relative;
+}
+
+.project-item:hover .project-details {
+  opacity: 1;
+}
+
+.section-title {
+  color:rgb(255, 102, 0);
+}
+.Middddle{
+  color:rgb(255, 102, 0);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #f6f7f9;
+  background-color: rgb(255, 102, 0);
+}
+
+.lead {
+  font-size: 25px;
+  padding-bottom: 26px;
+}
+
+/* Styles for the parent container */
+#spinner-container {
+  position: relative;
+  max-width: 200px;
+  min-height: 200px;
+  margin: 40px auto 0;
+  animation: spin 20s linear infinite; /* Adjust the duration and animation type as needed */
+  margin-bottom: -100px;
+}
+
+/* Styles for the corner icons */
+.corner-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.col-md-6 {
+  padding-top: 12px;
+}
+
+/* CSS animation for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles for the text content container */
+.hero-text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
+  position: relative;
+  bottom: 100px;
+}
+
+/* Additional styles for the typed text */
+#typed {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 102, 0);
+}
+
+.pt-5, .py-5 {
+  padding-top: 0px;
+}
+
+.typed-cursor {
+  position: relative;
+  top: -10px;
+}
